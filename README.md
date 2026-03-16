@@ -312,17 +312,3 @@ python -m src.models.run_anomaly_experiments
 - Инференс для одной транзакции не имеет внешнего исторического state, поэтому user-history features строятся только из данных, доступных в самом запросе.
 - Выбранный threshold на sample dataset — это временное значение, которое нужно переоценивать на реалистичном holdout-наборе.
 
-## Scope Sprint 9
-
-- Минимальная воспроизводимая структура ML-проекта
-- Загрузка CSV и Parquet
-- Первичный data audit
-- Сохранение audit-артефактов
-- Воспроизводимый EDA pipeline с графиками и markdown-отчётами
-- Воспроизводимый feature engineering pipeline с train/valid/test
-- Baseline model с сохранением метрик, графиков и артефакта модели
-- Основная tabular model с умеренным tuning и сравнением с baseline
-- Threshold tuning с business-cost analysis и рабочим threshold
-- Explainability и error analysis с сохранением графиков и отчётов
-- FastAPI inference service, Docker packaging, smoke tests и финальный summary report
-- Опциональный anomaly detection эксперимент и сравнение с supervised model
